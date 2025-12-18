@@ -65,7 +65,7 @@ export default function Hero() {
                 Virtual Persona
               </span>
             </h1>
-            <p className="text-lg md:text-xl text-[#1D1D1F]/60 dark:text-[#F5F5F7]/60 mb-12 max-w-xl leading-relaxed font-medium">
+            <p className="text-lg md:text-xl text-[#1D1D1F]/60 dark:text-slate-400 mb-12 max-w-xl leading-relaxed font-medium">
               Join <strong>Konaha Studio</strong> to bridge the gap between imagination and reality with industry-leading Live2D models.
             </p>
             <div className="flex flex-col sm:flex-row items-start gap-6">
@@ -78,21 +78,20 @@ export default function Hero() {
             </div>
           </motion.div>
 
-          {/* Right Column: Large Image Placeholder */}
           <motion.div
             initial={{ opacity: 0, scale: 0.9, x: 40 }}
             animate={{ opacity: 1, scale: 1, x: 0 }}
             transition={{ duration: 1.2, ease: [0.23, 1, 0.32, 1], delay: 0.2 }}
-            className="relative hidden lg:block"
+            className="relative hidden lg:flex items-center justify-center"
           >
-            <div className="aspect-[4/5] border border-slate-200 dark:border-white/10 overflow-hidden flex items-center justify-center group relative">
+            <div className="relative group">
               <img 
                 src="/images/showcase.jpg" 
                 alt="Konaha Showcase" 
-                className="w-full h-full object-cover transition-transform duration-1000 group-hover:scale-110"
+                className="w-full h-auto max-h-[75vh] object-contain border border-slate-200 dark:border-white/10 rounded-3xl transition-transform duration-1000 group-hover:scale-[1.02] shadow-sm"
               />
-              {/* Overlay highlight */}
-              <div className="absolute inset-0 bg-gradient-to-tr from-[#007AFF]/10 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-700" />
+              {/* Subtle Glow Overlay */}
+              <div className="absolute inset-0 rounded-3xl bg-gradient-to-tr from-[#007AFF]/5 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-700 pointer-events-none" />
             </div>
           </motion.div>
 

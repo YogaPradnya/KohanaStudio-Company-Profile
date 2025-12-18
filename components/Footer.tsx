@@ -25,18 +25,18 @@ export default function Footer() {
             <h3 className="text-2xl font-bold text-[#1D1D1F] dark:text-[#F5F5F7] tracking-tighter">
               KONAHA <span className="text-[#007AFF]">Studio</span>
             </h3>
-            <p className="text-[#1D1D1F]/60 dark:text-[#F5F5F7]/60 font-medium leading-relaxed">
+            <p className="text-[#1D1D1F]/60 dark:text-slate-400 font-medium leading-relaxed">
               Konaha Studio is your premier creative partner in the virtual frontier. We specialize in high-end Live2D modeling and immersive stream assets designed to elevate your virtual presence.
             </p>
           </div>
 
           {/* Quick Navigation */}
           <div>
-            <h4 className="text-sm font-bold uppercase tracking-widest text-[#1D1D1F]/30 dark:text-white/20 mb-6">Navigation</h4>
+            <h4 className="text-sm font-bold uppercase tracking-widest text-[#1D1D1F]/30 dark:text-slate-500 mb-6">Navigation</h4>
             <ul className="space-y-4">
               {navLinks.map((link) => (
                 <li key={link.name}>
-                  <Link href={link.href} className="text-[#1D1D1F]/70 dark:text-[#F5F5F7]/70 hover:text-[#007AFF] font-medium transition-colors">
+                  <Link href={link.href} className="text-[#1D1D1F]/70 dark:text-slate-300 font-medium transition-colors hover:text-[#007AFF]">
                     {link.name}
                   </Link>
                 </li>
@@ -46,11 +46,11 @@ export default function Footer() {
 
           {/* Services */}
           <div>
-            <h4 className="text-sm font-bold uppercase tracking-widest text-[#1D1D1F]/30 dark:text-white/20 mb-6">Our Services</h4>
+            <h4 className="text-sm font-bold uppercase tracking-widest text-[#1D1D1F]/30 dark:text-slate-500 mb-6">Our Services</h4>
             <ul className="space-y-4">
               {servicesLinks.map((link) => (
                 <li key={link.name}>
-                  <Link href={link.href} className="text-[#1D1D1F]/70 dark:text-[#F5F5F7]/70 hover:text-[#007AFF] font-medium transition-colors">
+                  <Link href={link.href} className="text-[#1D1D1F]/70 dark:text-slate-300 font-medium transition-colors hover:text-[#007AFF]">
                     {link.name}
                   </Link>
                 </li>
@@ -60,28 +60,28 @@ export default function Footer() {
 
           {/* Social & Contact */}
           <div>
-            <h4 className="text-sm font-bold uppercase tracking-widest text-[#1D1D1F]/30 dark:text-white/20 mb-6">Stay Connected</h4>
+            <h4 className="text-sm font-bold uppercase tracking-widest text-[#1D1D1F]/30 dark:text-slate-500 mb-6">Stay Connected</h4>
             <div className="flex flex-wrap gap-3 mb-8">
               {[Instagram, Twitter, Youtube, Mail].map((Icon, i) => (
                 <a 
                   key={i} 
                   href="#" 
-                  className="p-3.5 rounded-2xl bg-[#F5F5F7] dark:bg-black/40 text-[#1D1D1F]/40 dark:text-[#F5F5F7]/40 hover:text-[#007AFF] hover:bg-white dark:hover:bg-white/10 transition-all active:scale-90 border border-transparent hover:border-slate-100 dark:hover:border-white/5 shadow-sm"
+                  className="p-3.5 rounded-2xl bg-[#F5F5F7] dark:bg-black/40 text-[#1D1D1F]/40 dark:text-slate-400 hover:text-[#007AFF] hover:bg-white dark:hover:bg-white/10 transition-all active:scale-90 border border-transparent hover:border-slate-100 dark:hover:border-white/5 shadow-sm"
                 >
                   <Icon size={18} />
                 </a>
               ))}
             </div>
-            <p className="text-xs font-bold text-[#1D1D1F]/20 dark:text-white/10 uppercase tracking-[0.2em]">Contact Us: hello@neogen.studio</p>
+            <p className="text-xs font-bold text-[#1D1D1F]/20 dark:text-slate-600 uppercase tracking-[0.2em]">Contact Us: hello@neogen.studio</p>
           </div>
         </div>
 
         {/* Bottom Bar */}
         <div className="pt-10 border-t border-slate-100 dark:border-white/5 flex flex-col md:flex-row justify-between items-center gap-6">
-          <p className="text-[#1D1D1F]/20 dark:text-white/10 text-[10px] font-bold uppercase tracking-[0.3em]">© 2024 Konaha Studio. Built for the future.</p>
+          <p className="text-[#1D1D1F]/20 dark:text-slate-600 text-[10px] font-bold uppercase tracking-[0.3em]">© 2024 Konaha Studio. Built for the future.</p>
           <div className="flex gap-8">
-            <Link href="#" className="text-[10px] font-bold uppercase tracking-widest text-[#1D1D1F]/20 dark:text-white/10 hover:text-[#007AFF] transition-colors">Privacy Policy</Link>
-            <Link href="#" className="text-[10px] font-bold uppercase tracking-widest text-[#1D1D1F]/20 dark:text-white/10 hover:text-[#007AFF] transition-colors">Terms of Service</Link>
+            <Link href="#" className="text-[10px] font-bold uppercase tracking-widest text-[#1D1D1F]/20 dark:text-slate-600 hover:text-[#007AFF] transition-colors">Privacy Policy</Link>
+            <Link href="#" className="text-[10px] font-bold uppercase tracking-widest text-[#1D1D1F]/20 dark:text-slate-600 hover:text-[#007AFF] transition-colors">Terms of Service</Link>
           </div>
         </div>
       </div>

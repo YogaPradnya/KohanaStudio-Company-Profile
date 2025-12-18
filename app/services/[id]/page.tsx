@@ -82,14 +82,14 @@ export default function ServiceDetail() {
               <h1 className="text-5xl md:text-6xl font-bold text-[#1D1D1F] dark:text-[#F5F5F7] mb-8 tracking-tight">
                 {service.title}
               </h1>
-              <p className="text-xl text-[#1D1D1F]/60 dark:text-[#F5F5F7]/60 leading-relaxed mb-12 font-medium">
+              <p className="text-xl text-[#1D1D1F]/60 dark:text-slate-400 leading-relaxed mb-12 font-medium">
                 {service.description}
               </p>
 
               <div className="space-y-4 mb-12">
                 <h3 className="text-2xl font-bold text-[#1D1D1F] dark:text-[#F5F5F7] mb-6">What you'll get:</h3>
                 {service.features.map((feature, i) => (
-                  <div key={i} className="flex items-center space-x-3 text-[#1D1D1F]/70 dark:text-[#F5F5F7]/70 font-medium">
+                  <div key={i} className="flex items-center space-x-3 text-[#1D1D1F]/70 dark:text-slate-300 font-medium">
                     <div className="w-6 h-6 rounded-full bg-[#007AFF] flex items-center justify-center flex-shrink-0">
                       <Check className="text-white" size={14} strokeWidth={4} />
                     </div>
@@ -108,18 +108,15 @@ export default function ServiceDetail() {
               initial={{ opacity: 0, scale: 0.9, x: 30 }}
               animate={{ opacity: 1, scale: 1, x: 0 }}
               transition={{ duration: 1, delay: 0.2, ease: [0.23, 1, 0.32, 1] }}
-              className="relative"
+              className="relative flex items-center justify-center"
             >
-              <div className="aspect-[4/5]  border border-slate-200 dark:border-white/10 overflow-hidden group relative">
-                <img
-                  src={service.image}
-                  alt={service.title}
-                  className="w-full h-full object-cover transition-transform duration-1000 group-hover:scale-110"
+              <div className="relative group">
+                <img 
+                  src={service.image} 
+                  alt={service.title} 
+                  className="w-full h-auto max-h-[80vh] object-contain border border-slate-200 dark:border-white/10 rounded-3xl transition-transform duration-1000 group-hover:scale-[1.02] shadow-sm"
                 />
-
               </div>
-
-
             </motion.div>
           </div>
         </div>

@@ -6,6 +6,7 @@ import About from '../components/About'
 import Services from '../components/Services'
 import Pricing from '../components/Pricing'
 import FAQ from '../components/FAQ'
+import WhyChooseUs from '../components/WhyChooseUs'
 import Footer from '../components/Footer'
 import AOS from 'aos'
 import 'aos/dist/aos.css'
@@ -35,6 +36,9 @@ export default function HomePage() {
         </div>
         <div data-aos="fade-up">
           <FAQ />
+        </div>
+        <div data-aos="fade-up">
+          <WhyChooseUs />
         </div>
       </main>
       <Footer />

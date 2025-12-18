@@ -47,7 +47,7 @@ export default function FAQ() {
       <div className="max-w-4xl mx-auto px-6">
         <div className="text-center mb-16">
           <h2 className="text-4xl font-bold text-[#1D1D1F] dark:text-[#F5F5F7] mb-6 tracking-tight">Support & FAQ</h2>
-          <p className="text-[#1D1D1F]/50 dark:text-[#F5F5F7]/50 font-medium max-w-xl mx-auto">Everything you need to know about our process, technology, and commercial terms.</p>
+          <p className="text-[#1D1D1F]/50 dark:text-slate-400 font-medium max-xl mx-auto">Everything you need to know about our process, technology, and commercial terms.</p>
         </div>
 
         {/* Category Selector */}
@@ -62,7 +62,7 @@ export default function FAQ() {
               className={`px-6 py-2.5 rounded-full text-[13px] font-bold tracking-widest uppercase transition-all duration-300 ${
                 activeCategory === cat
                   ? 'bg-[#007AFF] text-white shadow-lg shadow-blue-500/20'
-                  : 'bg-[#F5F5F7] dark:bg-white/5 text-[#1D1D1F]/40 dark:text-[#F5F5F7]/40 hover:bg-slate-100 dark:hover:bg-white/10'
+                  : 'bg-[#F5F5F7] dark:bg-white/5 text-[#1D1D1F]/40 dark:text-slate-400 hover:bg-slate-100 dark:hover:bg-white/10'
               }`}
             >
               {cat}
@@ -98,7 +98,7 @@ export default function FAQ() {
                       openIndex === i ? 'text-[#007AFF]' : 'text-[#1D1D1F] dark:text-[#F5F5F7]'
                     }`}>{f.q}</span>
                     <div className={`flex-shrink-0 w-8 h-8 rounded-full flex items-center justify-center transition-all ${
-                      openIndex === i ? 'bg-[#007AFF] text-white rotate-180' : 'bg-slate-200 dark:bg-white/10 text-[#1D1D1F]/30 dark:text-white/20'
+                      openIndex === i ? 'bg-[#007AFF] text-white rotate-180' : 'bg-slate-200 dark:bg-white/10 text-[#1D1D1F]/30 dark:text-slate-500'
                     }`}>
                       <ChevronDown size={18} />
                     </div>
@@ -111,7 +111,7 @@ export default function FAQ() {
                         exit={{ height: 0, opacity: 0 }}
                         transition={{ duration: 0.4, ease: [0.23, 1, 0.32, 1] }}
                       >
-                        <div className="px-7 pb-8 pt-2 text-[#1D1D1F]/60 dark:text-[#F5F5F7]/60 font-medium text-[16px] leading-relaxed max-w-2xl">
+                        <div className="px-7 pb-8 pt-2 text-[#1D1D1F]/60 dark:text-slate-400 font-medium text-[16px] leading-relaxed max-w-2xl">
                           {f.a}
                         </div>
                       </motion.div>

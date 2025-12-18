@@ -34,7 +34,7 @@ export default function Services() {
         <div className="flex flex-col md:flex-row justify-between items-end mb-24 gap-8">
           <div className="max-w-2xl">
             <h2 className="text-4xl md:text-6xl font-bold text-[#1D1D1F] dark:text-[#F5F5F7] mb-6 tracking-tight">Expertise.</h2>
-            <p className="text-xl text-[#1D1D1F]/50 dark:text-[#F5F5F7]/50 font-medium leading-relaxed">
+            <p className="text-xl text-[#1D1D1F]/50 dark:text-slate-400 font-medium leading-relaxed">
               We specialize in the intersection of art and technology, creating virtual identities that resonate with global audiences.
             </p>
           </div>
@@ -58,7 +58,7 @@ export default function Services() {
                   <item.icon size={44} strokeWidth={1.2} />
                 </div>
                 <h3 className="text-2xl font-bold mb-4 text-[#1D1D1F] dark:text-[#F5F5F7] tracking-tight">{item.title}</h3>
-                <p className="text-[#1D1D1F]/50 dark:text-[#F5F5F7]/50 leading-relaxed font-medium text-lg mb-8">
+                <p className="text-[#1D1D1F]/50 dark:text-slate-400 leading-relaxed font-medium text-lg mb-8">
                   {item.desc}
                 </p>
                 <div className="w-8 h-1 bg-[#007AFF] transform origin-left scale-x-0 group-hover:scale-x-100 transition-transform duration-500" />

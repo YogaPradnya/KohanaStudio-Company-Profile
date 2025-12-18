@@ -45,15 +45,15 @@ export default function Navbar() {
           </Link>
           
           <div className="hidden md:flex items-center space-x-8">
-            <Link href="/" className="text-[15px] text-[#1D1D1F]/70 dark:text-[#F5F5F7]/70 hover:text-[#007AFF] font-medium transition-colors">Home</Link>
-            <Link href="/about" className="text-[15px] text-[#1D1D1F]/70 dark:text-[#F5F5F7]/70 hover:text-[#007AFF] font-medium transition-colors">About</Link>
+            <Link href="/" className="text-[15px] text-[#1D1D1F]/70 dark:text-slate-300 hover:text-[#007AFF] font-medium transition-colors">Home</Link>
+            <Link href="/about" className="text-[15px] text-[#1D1D1F]/70 dark:text-slate-300 hover:text-[#007AFF] font-medium transition-colors">About</Link>
             
             <div 
               className="relative"
               onMouseEnter={() => setIsServicesOpen(true)}
               onMouseLeave={() => setIsServicesOpen(false)}
             >
-              <button className="flex items-center space-x-1 text-[15px] text-[#1D1D1F]/70 dark:text-[#F5F5F7]/70 hover:text-[#007AFF] font-medium transition-colors">
+              <button className="flex items-center space-x-1 text-[15px] text-[#1D1D1F]/70 dark:text-slate-300 hover:text-[#007AFF] font-medium transition-colors">
                 <span>Services</span>
                 <ChevronDown size={14} className={`transition-transform duration-300 ${isServicesOpen ? 'rotate-180' : ''}`} />
               </button>
@@ -80,7 +80,7 @@ export default function Navbar() {
               </AnimatePresence>
             </div>
 
-            <Link href="/#pricing" className="text-[15px] text-[#1D1D1F]/70 dark:text-[#F5F5F7]/70 hover:text-[#007AFF] font-medium transition-colors">Pricing</Link>
+            <Link href="/#pricing" className="text-[15px] text-[#1D1D1F]/70 dark:text-slate-300 hover:text-[#007AFF] font-medium transition-colors">Pricing</Link>
             
             <div className="flex items-center space-x-3 border-l border-slate-200 dark:border-slate-800 ml-4 pl-4">
               <button 
@@ -111,7 +111,7 @@ export default function Navbar() {
           >
             <div className="p-6 space-y-4">
               <Link href="/" onClick={() => setIsMenuOpen(false)} className="block text-lg font-medium text-[#1D1D1F] dark:text-[#F5F5F7]">Home</Link>
-              <Link href="/about" onClick={() => setIsMenuOpen(false)} className="block text-lg font-medium text-[#1D1D1F]/60 dark:text-[#F5F5F7]/60">About</Link>
+              <Link href="/about" onClick={() => setIsMenuOpen(false)} className="block text-lg font-medium text-[#1D1D1F]/60 dark:text-slate-400">About</Link>
               <div className="pt-2 pb-2 border-y border-slate-100 dark:border-slate-800 space-y-2">
                 {serviceItems.map(item => (
                   <Link key={item.id} href={`/services/${item.id}`} onClick={() => setIsMenuOpen(false)} className="block text-[#007AFF] font-medium ml-4">{item.name}</Link>
