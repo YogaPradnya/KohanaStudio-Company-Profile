@@ -31,7 +31,7 @@ export default function FAQ() {
     Commercial: [
       { 
         q: "Do I have full commercial rights to my model?", 
-        a: "Yes, once the final payment is cleared and the files are delivered, you hold full commercial rights to use the model for streaming, content creation, merchandising, and brand partnerships. NEO-GEN Studio retains only the right to use the model and assets in our professional portfolio and promotional materials, unless a Non-Disclosure Agreement (NDA) is specifically requested and agreed upon." 
+        a: "Yes, once the final payment is cleared and the files are delivered, you hold full commercial rights to use the model for streaming, content creation, merchandising, and brand partnerships. Konaha Studio retains only the right to use the model and assets in our professional portfolio and promotional materials, unless a Non-Disclosure Agreement (NDA) is specifically requested and agreed upon." 
       },
       { 
         q: "What is your revision policy?", 

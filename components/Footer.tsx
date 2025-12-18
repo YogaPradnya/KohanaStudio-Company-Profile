@@ -72,7 +72,7 @@ export default function Footer() {
                 </a>
               ))}
             </div>
-            <p className="text-xs font-bold text-[#1D1D1F]/20 dark:text-slate-600 uppercase tracking-[0.2em]">Contact Us: hello@neogen.studio</p>
+            <p className="text-xs font-bold text-[#1D1D1F]/20 dark:text-slate-600 uppercase tracking-[0.2em]">Contact Us: hello@konaha.studio</p>
           </div>
         </div>
 

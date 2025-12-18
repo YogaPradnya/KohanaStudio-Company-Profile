@@ -15,7 +15,7 @@ export default function AboutPage() {
     {
       year: '2022',
       title: 'Breaking Frontiers',
-      desc: 'Successfully launched over 50+ high-end models for independent creators across Southeast Asia and Japan.'
+      desc: 'Successfully launched over 5+ high-end models for independent creators across Southeast Asia and Japan.'
     },
     {
       year: '2023',
