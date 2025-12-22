@@ -39,7 +39,7 @@ const serviceData = {
     title: 'Visual Identity',
     icon: Palette,
     color: 'bg-[#32ADE6]',
-    image: '/images/visual.jpeg',
+    image: 'images/visuality.jpeg',
     description: 'Building a strong brand for your virtual career. We help create consistent visual elements across all platforms.',
     features: [
       'Custom Logo Design (Type & Icon)',
