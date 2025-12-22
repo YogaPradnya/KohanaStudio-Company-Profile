@@ -11,7 +11,7 @@ const serviceData = {
     title: 'Live2D Model',
     icon: Sparkles,
     color: 'bg-[#007AFF]',
-    image: '/images/showcase.jpg',
+    image: '/images/live2d.jpeg',
     description: 'Professional Live2D model creation from illustration to ready-to-use rigging. We focus on natural expressions and smooth movements for the best streaming experience.',
     features: [
       'High-Res Character Illustration (PSD Layered)',
@@ -39,7 +39,7 @@ const serviceData = {
     title: 'Visual Identity',
     icon: Palette,
     color: 'bg-[#32ADE6]',
-    image: '/images/showcase.jpg',
+    image: '/images/visual.jpeg',
     description: 'Building a strong brand for your virtual career. We help create consistent visual elements across all platforms.',
     features: [
       'Custom Logo Design (Type & Icon)',

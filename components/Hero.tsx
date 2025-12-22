@@ -32,9 +32,12 @@ export default function Hero() {
               Join <strong>Konaha Studio</strong> to bridge the gap between imagination and reality with industry-leading Live2D models.
             </p>
             <div className="flex flex-col sm:flex-row items-center lg:items-start gap-6">
-              <button className="px-10 py-4 bg-[#007AFF] hover:bg-[#0071E3] text-white rounded-full font-bold text-lg shadow-xl shadow-blue-500/20 transition-all hover:scale-[1.05] active:scale-95">
+              <a
+                href="#price"
+                className="px-10 py-4 bg-[#007AFF] hover:bg-[#0071E3] text-white rounded-full font-bold text-lg shadow-xl shadow-blue-500/20 transition-all hover:scale-[1.05] active:scale-95 flex items-center justify-center"
+              >
                 Start Your Journey
-              </button>
+              </a>
               <a
                 href="https://www.etsy.com/search?q=live%202d&ref=search_bar"
                 target="_blank"
@@ -55,7 +58,7 @@ export default function Hero() {
           >
             <div className="relative group">
               <img 
-                src="/images/showcase.jpg" 
+                src="/images/menu1.jpeg" 
                 alt="Konaha Showcase" 
                 className="w-full h-auto max-h-[75vh] object-contain border border-slate-200 dark:border-white/10 rounded-3xl transition-transform duration-1000 group-hover:scale-[1.02] shadow-sm"
               />
