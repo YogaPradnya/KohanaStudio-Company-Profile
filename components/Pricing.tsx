@@ -7,7 +7,7 @@ export default function Pricing() {
     { 
       name: 'Bust Up', 
       price: '$39', 
-      features: ['Head to Chest Illustration', 'Basic Rigging', '3 Custom Expressions', 'Raw Source Files'],
+      features: ['Head to Chest Illustration', 'Basic Rigging', '3 Custom Expressions', 'Essential Overlays'],
       recommended: false 
     },
     { 
@@ -19,7 +19,7 @@ export default function Pricing() {
     { 
       name: 'Full Body', 
       price: '$149', 
-      features: ['Full Body Illustration', 'Ultra Smooth Rigging', 'Unlimited Expressions', 'Premium Streaming Kit'],
+      features: ['Full Body Illustration', 'Ultra Smooth Rigging', '8 Custom Expressions', 'Premium Streaming Kit'],
       recommended: false 
     },
   ]
