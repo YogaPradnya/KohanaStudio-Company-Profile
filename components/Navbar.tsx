@@ -89,9 +89,14 @@ export default function Navbar() {
               >
                 {theme === 'light' ? <Moon size={18} /> : <Sun size={18} />}
               </button>
-              <button className="px-5 py-2 bg-[#007AFF] text-white rounded-full text-[14px] font-semibold hover:bg-[#0071E3] transition-all active:scale-95 shadow-lg shadow-blue-500/20">
+              <a 
+                href="https://wa.me/628123456789"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="px-5 py-2 bg-[#007AFF] text-white rounded-full text-[14px] font-semibold hover:bg-[#0071E3] transition-all active:scale-95 shadow-lg shadow-blue-500/20"
+              >
                 Contact
-              </button>
+              </a>
             </div>
           </div>
 
@@ -127,9 +132,14 @@ export default function Navbar() {
                   <Link key={item.id} href={`/services/${item.id}`} onClick={() => setIsMenuOpen(false)} className="block text-[#007AFF] font-bold text-lg">{item.name}</Link>
                 ))}
               </div>
-              <button className="w-full py-4 bg-[#007AFF] text-white rounded-[1.25rem] font-black text-lg shadow-lg shadow-blue-500/20 active:scale-95 transition-all">
+              <a 
+                href="https://wa.me/628123456789"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="w-full py-4 bg-[#007AFF] text-white rounded-[1.25rem] flex items-center justify-center font-black text-lg shadow-lg shadow-blue-500/20 active:scale-95 transition-all"
+              >
                 Contact Us
-              </button>
+              </a>
             </div>
           </motion.div>
         )}

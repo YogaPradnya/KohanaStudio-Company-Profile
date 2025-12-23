@@ -6,19 +6,19 @@ export default function Pricing() {
   const tiers = [
     { 
       name: 'Bust Up', 
-      price: '60$', 
+      price: '$39', 
       features: ['Head to Chest Illustration', 'Basic Rigging', '3 Custom Expressions', 'Raw Source Files'],
       recommended: false 
     },
     { 
       name: 'Half Body', 
-      price: '120$', 
+      price: '$99', 
       features: ['Head to Hip Illustration', 'Advanced Rigging', '5 Custom Expressions', 'Essential Overlays'],
       recommended: true 
     },
     { 
       name: 'Full Body', 
-      price: '180$', 
+      price: '$149', 
       features: ['Full Body Illustration', 'Ultra Smooth Rigging', 'Unlimited Expressions', 'Premium Streaming Kit'],
       recommended: false 
     },
@@ -50,7 +50,7 @@ export default function Pricing() {
             >
               <h3 className="text-2xl font-bold text-[#1D1D1F] dark:text-[#F5F5F7] mb-2">{t.name}</h3>
               <div className="flex items-baseline mb-8">
-                <span className="text-5xl font-black text-[#007AFF]">IDR {t.price}</span>
+                <span className="text-5xl font-black text-[#007AFF]">USD {t.price}</span>
                 <span className="text-[#1D1D1F]/40 dark:text-white/20 ml-2 font-bold text-sm tracking-widest">PACK</span>
               </div>
               <ul className="space-y-4 mb-10">

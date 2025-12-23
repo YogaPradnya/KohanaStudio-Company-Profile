@@ -1,6 +1,5 @@
 import type { Metadata } from 'next'
 import './globals.css'
-import InteractiveParticles from '@/components/InteractiveParticles'
 
 export const metadata: Metadata = {
   title: 'Konaha Studio - Premium Live2D Modeling',
@@ -16,7 +15,6 @@ export default function RootLayout({
     <html lang="id">
       <body className="antialiased">
         {children}
-        <InteractiveParticles />
       </body>
     </html>
   )

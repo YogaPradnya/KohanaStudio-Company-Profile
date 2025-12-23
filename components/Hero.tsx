@@ -5,10 +5,6 @@ export default function Hero() {
   return (
     <section id="home" className="relative min-h-[90vh] flex items-center pt-24 overflow-hidden bg-white dark:bg-[#1C1C1E] transition-colors duration-500">
       
-      {/* Dynamic Background Glows (Keep these in background) */}
-      <div className="absolute top-[-10%] right-[-10%] w-[60%] h-[60%] bg-blue-400/10 dark:bg-blue-600/5 rounded-full blur-[120px]" />
-      <div className="absolute bottom-[-10%] left-[-10%] w-[60%] h-[60%] bg-sky-300/10 dark:bg-sky-500/5 rounded-full blur-[120px]" />
-
       <div className="max-w-7xl mx-auto px-6 md:px-12 w-full relative z-10">
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-24 xl:gap-32 items-center">
           
@@ -24,7 +20,7 @@ export default function Hero() {
             </span>
             <h1 className="text-5xl md:text-6xl xl:text-7xl font-bold tracking-tight text-[#1D1D1F] dark:text-[#F5F5F7] leading-[1.1] mb-8">
               Elevate Your <br />
-              <span className="text-[#007AFF] animate-gradient bg-gradient-to-r from-[#007AFF] via-[#5AC8FA] to-[#007AFF] bg-clip-text text-transparent bg-[length:200%_auto]">
+              <span className="text-[#007AFF] bg-gradient-to-r from-[#007AFF] via-[#5AC8FA] to-[#007AFF] bg-clip-text text-transparent">
                 Virtual Persona
               </span>
             </h1>
@@ -33,7 +29,7 @@ export default function Hero() {
             </p>
             <div className="flex flex-col sm:flex-row items-center lg:items-start gap-6">
               <a
-                href="#price"
+                href="/#pricing"
                 className="px-10 py-4 bg-[#007AFF] hover:bg-[#0071E3] text-white rounded-full font-bold text-lg shadow-xl shadow-blue-500/20 transition-all hover:scale-[1.05] active:scale-95 flex items-center justify-center"
               >
                 Start Your Journey
