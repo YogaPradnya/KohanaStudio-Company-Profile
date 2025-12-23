@@ -5,19 +5,19 @@ import { Check } from 'lucide-react'
 export default function Pricing() {
   const tiers = [
     { 
-      name: 'Bust Up', 
+      name: 'Basic', 
       price: '$39', 
       features: ['Head to Chest Illustration', 'Basic Rigging', '3 Custom Expressions', 'Essential Overlays'],
       recommended: false 
     },
     { 
-      name: 'Half Body', 
+      name: 'Standard', 
       price: '$99', 
       features: ['Head to Hip Illustration', 'Advanced Rigging', '5 Custom Expressions', 'Essential Overlays'],
       recommended: true 
     },
     { 
-      name: 'Full Body', 
+      name: 'Premium', 
       price: '$149', 
       features: ['Full Body Illustration', 'Ultra Smooth Rigging', '8 Custom Expressions', 'Premium Streaming Kit'],
       recommended: false 
@@ -29,7 +29,9 @@ export default function Pricing() {
       <div className="max-w-7xl mx-auto px-6 lg:px-12">
         <div className="text-center mb-20">
           <h2 className="text-3xl md:text-4xl font-bold text-[#1D1D1F] dark:text-[#F5F5F7] mb-4">Investment Plans</h2>
-          <p className="text-[#1D1D1F]/60 dark:text-[#F5F5F7]/60 font-medium text-lg">Premium quality at competitive rates.</p>
+          <p className="text-[#1D1D1F]/60 dark:text-[#F5F5F7]/60 font-medium text-lg">
+            Transparent prices, no hidden fees—each plan is thoughtfully crafted to help you shine in the virtual world. Whether you’re just starting out or aiming for top-tier production, you’ll receive a polished illustration, expressive Live2D model, and exclusive streaming kit tailored to your needs. Get professional results, lightning-fast support, and creative freedom, all at unbeatable value.
+          </p>
         </div>
         
         <div className="grid lg:grid-cols-3 gap-8">
